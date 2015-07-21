@@ -29,7 +29,7 @@
     
     DPLMutableDeepLink *link = [[DPLMutableDeepLink alloc] initWithString:@"despe://home/hotel"];
     link[@"searchParams"] = hotelInfo;
-    link[@"viewController"] = @"DMFlightsSearchViewController";
+    link[@"viewControllers"] = @[@"DMFlightsSearchViewController", @"DMFlightsResultsViewController"];
     link[@"storyboardName"] = @"DMFlightsMain";
     
     if ([[UIApplication sharedApplication] canOpenURL:link.URL]) {
