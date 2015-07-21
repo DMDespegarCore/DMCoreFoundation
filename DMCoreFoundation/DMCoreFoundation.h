@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char DMCoreFoundationVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <DMCoreFoundation/PublicHeader.h>
 
 
+#import <DMCoreFoundation/DMURIHandlerProtocol.h>
+#import <DMCoreFoundation/DMXSellingManager.h>

@@ -10,6 +10,9 @@
 		F0D767AE1B56E41600405F11 /* DMCoreFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D767AD1B56E41600405F11 /* DMCoreFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D767B41B56E41600405F11 /* DMCoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D767A81B56E41600405F11 /* DMCoreFoundation.framework */; };
 		F0D767BB1B56E41600405F11 /* DMCoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D767BA1B56E41600405F11 /* DMCoreFoundationTests.m */; };
+		F0D767C61B56E46F00405F11 /* DMURIHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0F0F9E71B5E92D100EDB1C5 /* DMXSellingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F0F9E51B5E92D100EDB1C5 /* DMXSellingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0F0F9E81B5E92D100EDB1C5 /* DMXSellingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		F0D767B31B56E41600405F11 /* DMCoreFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMCoreFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D767B91B56E41600405F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D767BA1B56E41600405F11 /* DMCoreFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCoreFoundationTests.m; sourceTree = "<group>"; };
+		F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMURIHandlerProtocol.h; sourceTree = SOURCE_ROOT; };
+		F0F0F9E51B5E92D100EDB1C5 /* DMXSellingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXSellingManager.h; sourceTree = "<group>"; };
+		F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXSellingManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				F0D767AD1B56E41600405F11 /* DMCoreFoundation.h */,
+				F0F0F9E51B5E92D100EDB1C5 /* DMXSellingManager.h */,
+				F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */,
 				F0D767AB1B56E41600405F11 /* Supporting Files */,
+				F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */,
 			);
 			path = DMCoreFoundation;
 			sourceTree = "<group>";
@@ -110,6 +119,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0D767AE1B56E41600405F11 /* DMCoreFoundation.h in Headers */,
+				F0D767C61B56E46F00405F11 /* DMURIHandlerProtocol.h in Headers */,
+				F0F0F9E71B5E92D100EDB1C5 /* DMXSellingManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F0F9E81B5E92D100EDB1C5 /* DMXSellingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +410,7 @@
 				F0D767C01B56E41600405F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0D767C11B56E41600405F11 /* Build configuration list for PBXNativeTarget "DMCoreFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +419,7 @@
 				F0D767C31B56E41600405F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
