@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42F518C16C4F067ACDF00210 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F325377E3FD533FB4708DD36 /* libPods.a */; };
 		F0D767AE1B56E41600405F11 /* DMCoreFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D767AD1B56E41600405F11 /* DMCoreFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D767B41B56E41600405F11 /* DMCoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D767A81B56E41600405F11 /* DMCoreFoundation.framework */; };
 		F0D767BB1B56E41600405F11 /* DMCoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D767BA1B56E41600405F11 /* DMCoreFoundationTests.m */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18AF62B762FBD8C13468D00C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		832627B47465C4222AA7B9CA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F0D767A81B56E41600405F11 /* DMCoreFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMCoreFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D767AC1B56E41600405F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D767AD1B56E41600405F11 /* DMCoreFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCoreFoundation.h; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMURIHandlerProtocol.h; sourceTree = SOURCE_ROOT; };
 		F0F0F9E51B5E92D100EDB1C5 /* DMXSellingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXSellingManager.h; sourceTree = "<group>"; };
 		F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXSellingManager.m; sourceTree = "<group>"; };
+		F325377E3FD533FB4708DD36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F518C16C4F067ACDF00210 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3507D4A6142702AD7E59410F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F325377E3FD533FB4708DD36 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9C81F4E4D52AA6DD9194252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18AF62B762FBD8C13468D00C /* Pods.debug.xcconfig */,
+				832627B47465C4222AA7B9CA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F0D7679E1B56E41600405F11 = {
 			isa = PBXGroup;
 			children = (
 				F0D767AA1B56E41600405F11 /* DMCoreFoundation */,
 				F0D767B71B56E41600405F11 /* DMCoreFoundationTests */,
 				F0D767A91B56E41600405F11 /* Products */,
+				B9C81F4E4D52AA6DD9194252 /* Pods */,
+				3507D4A6142702AD7E59410F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,10 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0D767BE1B56E41600405F11 /* Build configuration list for PBXNativeTarget "DMCoreFoundation" */;
 			buildPhases = (
+				D3E2D485DB1B6D3CC4F9D71D /* Check Pods Manifest.lock */,
 				F0D767A31B56E41600405F11 /* Sources */,
 				F0D767A41B56E41600405F11 /* Frameworks */,
 				F0D767A51B56E41600405F11 /* Headers */,
 				F0D767A61B56E41600405F11 /* Resources */,
+				A5CC7D36A9C3A75EF99605A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +240,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5CC7D36A9C3A75EF99605A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E2D485DB1B6D3CC4F9D71D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0D767A31B56E41600405F11 /* Sources */ = {
@@ -333,6 +392,7 @@
 		};
 		F0D767BF1B56E41600405F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18AF62B762FBD8C13468D00C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -348,6 +408,7 @@
 		};
 		F0D767C01B56E41600405F11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832627B47465C4222AA7B9CA /* Pods.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
