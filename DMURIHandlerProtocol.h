@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Nicolas Miyasato. All rights reserved.
 //
 
-#ifndef DMCoreFoundation_DMURIHandlerProtocol_h
-#define DMCoreFoundation_DMURIHandlerProtocol_h
+@protocol DMURIHandlerProtocol <NSObject>
 
+- (NSArray *)uris;
 
-#endif
+@end
