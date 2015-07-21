@@ -14,6 +14,7 @@
 		F0D767C61B56E46F00405F11 /* DMURIHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0F0F9E71B5E92D100EDB1C5 /* DMXSellingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F0F9E51B5E92D100EDB1C5 /* DMXSellingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0F0F9E81B5E92D100EDB1C5 /* DMXSellingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */; };
+		F0F0F9EB1B5EE18400EDB1C5 /* DMLandingEnabledProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F0F9EA1B5EE18400EDB1C5 /* DMLandingEnabledProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMURIHandlerProtocol.h; sourceTree = SOURCE_ROOT; };
 		F0F0F9E51B5E92D100EDB1C5 /* DMXSellingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMXSellingManager.h; sourceTree = "<group>"; };
 		F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMXSellingManager.m; sourceTree = "<group>"; };
+		F0F0F9EA1B5EE18400EDB1C5 /* DMLandingEnabledProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLandingEnabledProtocol.h; sourceTree = "<group>"; };
 		F325377E3FD533FB4708DD36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				F0F0F9E61B5E92D100EDB1C5 /* DMXSellingManager.m */,
 				F0D767AB1B56E41600405F11 /* Supporting Files */,
 				F0D767C51B56E46F00405F11 /* DMURIHandlerProtocol.h */,
+				F0F0F9EA1B5EE18400EDB1C5 /* DMLandingEnabledProtocol.h */,
 			);
 			path = DMCoreFoundation;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				F0D767AE1B56E41600405F11 /* DMCoreFoundation.h in Headers */,
 				F0D767C61B56E46F00405F11 /* DMURIHandlerProtocol.h in Headers */,
 				F0F0F9E71B5E92D100EDB1C5 /* DMXSellingManager.h in Headers */,
+				F0F0F9EB1B5EE18400EDB1C5 /* DMLandingEnabledProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

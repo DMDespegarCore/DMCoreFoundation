@@ -28,7 +28,7 @@
 - (void) boughtHotel:(NSDictionary *)hotelInfo {
     
     DPLMutableDeepLink *link = [[DPLMutableDeepLink alloc] initWithString:@"despe://home/hotel"];
-    link[@"searchParams"] = hotelInfo;
+    link[@"viewControllersInfo"] = @[hotelInfo, hotelInfo];
     link[@"viewControllers"] = @[@"DMFlightsSearchViewController", @"DMFlightsResultsViewController"];
     link[@"storyboardName"] = @"DMFlightsMain";
     
