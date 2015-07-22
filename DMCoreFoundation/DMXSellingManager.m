@@ -28,9 +28,13 @@
 - (void) boughtHotel:(NSDictionary *)hotelInfo {
     
     DPLMutableDeepLink *link = [[DPLMutableDeepLink alloc] initWithString:@"despe://home/hotel"];
+    
+    // Esta es la info que se usa para configurar los VCs
     link[@"viewControllersInfo"] = @[hotelInfo, hotelInfo];
     link[@"viewControllers"] = @[@"DMFlightsSearchViewController", @"DMFlightsResultsViewController"];
     link[@"storyboardName"] = @"DMFlightsMain";
+    
+    // También hay que ver el caso en el cual no hay StoryBoards.
     
     if ([[UIApplication sharedApplication] canOpenURL:link.URL]) {
         [[UIApplication sharedApplication] openURL:link.URL];
