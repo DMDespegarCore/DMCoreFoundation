@@ -26,7 +26,10 @@
 }
 
 - (void) boughtHotel:(NSDictionary *)hotelInfo {
-    
+    // La idea acá es generar el deeplink correspondiente con todos los viewControllers que
+    // van a ser pusheados
+    // También hay se generan los diccionarios (aunque puden ser clases serializables)
+    // necesarios para poder ser configurados.
     DPLMutableDeepLink *link = [[DPLMutableDeepLink alloc] initWithString:@"despe://home/hotel"];
     
     // Esta es la info que se usa para configurar los VCs
