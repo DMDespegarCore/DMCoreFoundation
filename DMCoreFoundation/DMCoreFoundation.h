@@ -18,5 +18,4 @@ FOUNDATION_EXPORT const unsigned char DMCoreFoundationVersionString[];
 
 
 #import <DMCoreFoundation/DMURIHandlerProtocol.h>
-#import <DMCoreFoundation/DMXSellingManager.h>
 #import <DMCoreFoundation/DMLandingEnabledProtocol.h>
