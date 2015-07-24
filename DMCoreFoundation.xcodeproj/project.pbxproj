@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42F518C16C4F067ACDF00210 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F325377E3FD533FB4708DD36 /* libPods.a */; };
 		F0D767AE1B56E41600405F11 /* DMCoreFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D767AD1B56E41600405F11 /* DMCoreFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D767B41B56E41600405F11 /* DMCoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D767A81B56E41600405F11 /* DMCoreFoundation.framework */; };
 		F0D767BB1B56E41600405F11 /* DMCoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D767BA1B56E41600405F11 /* DMCoreFoundationTests.m */; };
@@ -28,6 +27,7 @@
 /* Begin PBXFileReference section */
 		18AF62B762FBD8C13468D00C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		832627B47465C4222AA7B9CA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F09E986D1B61C75000149AFD /* libPods-DeepLinkKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-DeepLinkKit.a"; path = "/Users/nicolasmiyasato/src/core2/DMFlightsFoundation/Pods/../build/Debug-iphoneos/libPods-DeepLinkKit.a"; sourceTree = "<absolute>"; };
 		F0D767A81B56E41600405F11 /* DMCoreFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMCoreFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D767AC1B56E41600405F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D767AD1B56E41600405F11 /* DMCoreFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCoreFoundation.h; sourceTree = "<group>"; };
@@ -44,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F518C16C4F067ACDF00210 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +61,7 @@
 		3507D4A6142702AD7E59410F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F09E986D1B61C75000149AFD /* libPods-DeepLinkKit.a */,
 				F325377E3FD533FB4708DD36 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -152,12 +152,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0D767BE1B56E41600405F11 /* Build configuration list for PBXNativeTarget "DMCoreFoundation" */;
 			buildPhases = (
-				D3E2D485DB1B6D3CC4F9D71D /* Check Pods Manifest.lock */,
 				F0D767A31B56E41600405F11 /* Sources */,
 				F0D767A41B56E41600405F11 /* Frameworks */,
 				F0D767A51B56E41600405F11 /* Headers */,
 				F0D767A61B56E41600405F11 /* Resources */,
-				A5CC7D36A9C3A75EF99605A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,39 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A5CC7D36A9C3A75EF99605A7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3E2D485DB1B6D3CC4F9D71D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0D767A31B56E41600405F11 /* Sources */ = {
@@ -388,7 +353,6 @@
 		};
 		F0D767BF1B56E41600405F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18AF62B762FBD8C13468D00C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -397,6 +361,11 @@
 				INFOPLIST_FILE = DMCoreFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nicolasmiyasato/src/core2/DMFlightsFoundation/Pods/../build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -404,7 +373,6 @@
 		};
 		F0D767C01B56E41600405F11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 832627B47465C4222AA7B9CA /* Pods.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -413,6 +381,11 @@
 				INFOPLIST_FILE = DMCoreFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nicolasmiyasato/src/core2/DMFlightsFoundation/Pods/../build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
